@@ -6,7 +6,15 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import {jumbotron} from "./component/home.jsx";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+const root = ReactDOM.render(
+  <div>
+    <div>  
+    <jumbotron/>    
+      <NavBar/>      
+    </div>
+  </div>,
+  document.querySelector("#app")
+);
